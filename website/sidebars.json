@@ -1,0 +1,17 @@
+{
+  "docs": {
+    "General": ["getting-started", "production"],
+    "Creating a service": [
+      "service-introduction",
+      "service-domain",
+      "service-application",
+      "service-infrastructure"
+    ],
+    "Services": ["site-service", "auth-service", "user-service"],
+    "Admin panel": ["admin-panel"],
+    "React kit": ["react-kit"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
