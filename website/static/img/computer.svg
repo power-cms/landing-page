@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="720" viewBox="0 0 720 720">
+  <defs>
+    <clipPath id="clip-Computer">
+      <rect width="720" height="720"/>
+    </clipPath>
+  </defs>
+  <g id="Computer" clip-path="url(#clip-Computer)">
+    <path id="Path_16" data-name="Path 16" d="M4684,719.623s-25.494-72.84-153.593-81.553c-73.269-2.849-141.454,34.649-141.454,34.649s-40.158-50.4-124.661-34.649-84.207,72.77-84.207,72.77-104.335-61-173.326,34.176S4033,930.827,4033,930.827s-29.905,124.764,55.1,202.149,216.476,63.879,216.476,63.879,81,116.459,192.407,116.947S4684,1196.855,4684,1196.855Z" transform="translate(-3964 -627)" fill="#efefef"/>
+    <g id="Computer-2" data-name="Computer" transform="translate(20 1)">
+      <path id="Path_17" data-name="Path 17" d="M11.494,0H237.829c6.348,0,11.494,5.82,11.494,13V153c0,7.18-5.146,13-11.494,13H11.494C5.146,166,0,160.18,0,153V13C0,5.82,5.146,0,11.494,0Z" transform="translate(276 216)" fill="#292929"/>
+      <path id="Intersection_13" data-name="Intersection 13" d="M-3943.507-461c-6.347,0-11.493-5.821-11.493-13v-12h249.323v12c0,7.18-5.146,13-11.494,13Z" transform="translate(4231 843)" fill="#d3d3d3"/>
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="232.524" height="120" transform="translate(284.841 227)" fill="#fff"/>
+      <circle id="Ellipse_30" data-name="Ellipse 30" cx="5.5" cy="5.5" r="5.5" transform="translate(395 365)" fill="#fff"/>
+      <path id="Path_19" data-name="Path 19" d="M4345.059,1009a95.706,95.706,0,0,1-3.226,18.422,173.35,173.35,0,0,1-7.805,20.965h57.83a191.165,191.165,0,0,1-7.4-20.965,107.838,107.838,0,0,1-3.27-18.422Z" transform="translate(-3961 -627)" fill="#d3d3d3"/>
+      <text id="_code_" data-name="&lt;code/&gt;" transform="translate(314 307)" fill="#29c1dd" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">&lt;code/&gt;</tspan></text>
+    </g>
+    <text id="_" data-name="{ }" transform="translate(526 570)" fill="#29c1dd" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">{ }</tspan></text>
+    <text id="_2" data-name="??" transform="translate(156 210)" fill="#de1726" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">??</tspan></text>
+    <text id="_3" data-name="=&gt;" transform="translate(550 138)" fill="#cf29dd" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">=&gt;</tspan></text>
+    <text id="_4" data-name="&lt; &gt;" transform="translate(276 497)" fill="#15db69" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">&lt; &gt;</tspan></text>
+    <text id="_5" data-name="[ ]" transform="translate(150 391)" fill="#d629dd" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">[ ]</tspan></text>
+    <text id="_._" data-name="(.*)?" transform="translate(601 378)" fill="#2953dd" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">(.*)?</tspan></text>
+    <text id="_n" data-name="\n" transform="translate(332 133)" fill="#b9b549" font-size="60" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700"><tspan x="0" y="0">\n</tspan></text>
+  </g>
+</svg>

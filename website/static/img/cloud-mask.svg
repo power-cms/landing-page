@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="720" viewBox="0 0 720 720">
+  <defs>
+    <clipPath id="clip-Cloud">
+      <rect width="720" height="720"/>
+    </clipPath>
+  </defs>
+  <g id="Cloud" clip-path="url(#clip-Cloud)">
+    <path id="Path_16" data-name="Path 16" d="M4684,664.45s-338-57.18-414.941-23.9-88.973,70.285-88.973,70.285-104.335-61-173.326,34.176S4033,930.827,4033,930.827s-74.171,28.151-56.632,151.273,152.045,121.618,152.045,121.618-39.231,62.452,51.669,115.863,252.52-33.186,252.52-33.186,58.607,21.9,114.841,21.9S4684,1240.263,4684,1240.263Z" transform="translate(-3964 -627)" fill="#d2d2d2"/>
+  </g>
+</svg>

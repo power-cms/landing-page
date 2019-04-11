@@ -2,7 +2,7 @@
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
-    "build": "docusaurus-build",
+    "build": "rm -rf build && docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "docusaurus": "^1.7.3"
+  },
+  "dependencies": {
+    "react-feather": "^1.1.6",
+    "react-vertical-timeline-component": "^2.3.1"
   }
 }

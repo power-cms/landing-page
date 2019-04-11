@@ -1,4 +1,15 @@
 /* your custom css */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+
+body .fixedHeaderContainer {
+  background: #29c1dd;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+}
 
 .fixedHeaderContainer header .headerTitleWithLogo {
   display: none;
@@ -17,4 +28,541 @@
 }
 
 @media only screen and (min-width: 1500px) {
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1.1);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes flyAround {
+  0% {
+    transform: scale(1.4);
+  }
+  25% {
+    transform: translate(30px, -15px);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  75% {
+    transform: translate(-30px, 15px);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes moon {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  75% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes star {
+  0% {
+    transform: scale(0);
+  }
+  5% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0);
+  }
+}
+
+@keyframes ufo {
+  0% {
+    opacity: 1;
+  }
+  2% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: none;
+  }
+  5% {
+    transform: rotate(5deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: none;
+  }
+}
+
+@keyframes flame {
+  0% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0;
+  }
+  73% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+body .vertical-timeline-element-content {
+  background: #f6f6f6;
+  box-shadow: none;
+  border-top: 3px solid #29c1dd;
+}
+
+body .vertical-timeline::before {
+  background: #29c1dd;
+}
+
+body .vertical-timeline-element-icon {
+  box-shadow: none;
+  border: 4px solid #29c1dd;
+}
+
+body .vertical-timeline-element-content::before {
+  border-right: 7px solid #f6f6f6;
+  top: 12px;
+}
+
+body .vertical-timeline-element-subtitle {
+  opacity: 0.7;
+  text-transform: uppercase;
+  margin-top: 4px;
+  font-size: 0.7rem;
+}
+
+body .refactor .vertical-timeline-element-content {
+  border-color: #ffc107;
+}
+
+body .feature .vertical-timeline-element-content {
+  border-color: #28a745;
+}
+
+body .technical .vertical-timeline-element-content {
+  border-color: #212529;
+}
+
+body .homeContainer {
+  min-height: calc(100vh - 50px);
+  background: #29c1dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body .homeContainer .projectTitle {
+  color: #fff;
+}
+
+body .homeContainer .button {
+  color: #fff;
+  border-color: #fff;
+  font-size: 1.7rem;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+body .homeContainer .button:hover {
+  background: #fff;
+  color: #29c1dd;
+}
+
+body .mainContainer.homeMainContainer {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.try-it-out {
+  transition: 0.5s ease;
+  z-index: 1000;
+}
+
+.try-it-out.big {
+  transition: 0.5s ease;
+  transform: scale(1.5);
+}
+
+.galaxy,
+.stars {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.galaxy > img,
+.galaxy > div {
+  position: absolute;
+}
+
+.splash-rocket {
+  width: 17%;
+  bottom: 5%;
+  left: 2%;
+  transform: rotate(45deg) translate(120px, -250px);
+}
+
+.splash-rocket svg {
+  width: 100%;
+  height: 100%;
+  animation: rocket 12s linear infinite;
+}
+
+.splash-rocket svg #Flame-2 {
+  animation: flame 12s linear infinite;
+}
+
+.splash-moon {
+  width: 12%;
+  left: 10%;
+  top: 10%;
+  animation: moon 15s ease infinite;
+}
+
+.splash-ufo {
+  right: 15%;
+  top: 30%;
+}
+
+.splash-ufo > svg {
+  width: 25%;
+  height: 25%;
+  transform: rotate(-30deg);
+}
+
+.splash-ufo > svg .ufo-line {
+  animation: ufo 5s linear infinite;
+}
+
+.splash-planet-1 {
+  right: 20%;
+  top: 70%;
+  width: 12%;
+  animation: spin 15s linear infinite;
+}
+
+.splash-planet-2 {
+  left: 40%;
+  top: 5%;
+  width: 10%;
+  animation: flyAround 20s linear infinite;
+}
+
+.splash-cloud-1 {
+  left: -11%;
+  bottom: -22%;
+  transform: rotate(270deg);
+  width: 29%;
+}
+
+.splash-cloud-2 {
+  left: -15%;
+  bottom: 20%;
+  transform: rotate(118deg);
+  width: 29%;
+}
+
+.splash-cloud-3 {
+  left: 9%;
+  bottom: -30%;
+  transform: rotate(36deg);
+  width: 29%;
+}
+
+.splash-cloud-4 {
+  left: -2%;
+  bottom: -7%;
+  transform: rotate(251deg);
+  width: 29%;
+}
+
+.splash-cloud-5 {
+  right: -9%;
+  top: -18%;
+  transform: rotate(270deg);
+  width: 29%;
+}
+
+.splash-cloud-6 {
+  right: 3%;
+  top: -32%;
+  transform: rotate(27.9deg);
+  width: 29%;
+}
+
+.stars {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stars > .splash-star {
+  width: 10%;
+  box-sizing: border-box;
+}
+
+.stars > .splash-star::before {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  height: 5px;
+  width: 5px;
+  background: yellow;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: star 20s ease infinite;
+}
+
+.stars > .splash-star:nth-child(2n)::before {
+  animation-delay: 6s;
+}
+
+.stars > .splash-star:nth-child(3n)::before {
+  animation-delay: 13s;
+}
+
+.stars > .splash-star:nth-child(4n)::before {
+  animation-delay: 3s;
+}
+
+.stars > .splash-star:nth-child(5n)::before {
+  animation-delay: 15s;
+}
+
+.stars > .splash-star:nth-child(6n)::before {
+  animation-delay: 7s;
+}
+
+.stars > .splash-star:nth-child(7n)::before {
+  animation-delay: 16s;
+}
+
+.stars > .splash-star:nth-child(8n)::before {
+  animation-delay: 9s;
+}
+
+.stars > .splash-star:nth-child(10n)::before {
+  animation-delay: 4s;
+}
+
+.stars > .splash-star:nth-child(12n)::before {
+  animation-delay: 18s;
+}
+
+.stars > .splash-star:nth-child(15n)::before {
+  animation-delay: 17s;
+}
+
+.stars > .splash-star:nth-child(16n)::before {
+  animation-delay: 8s;
+}
+
+.stars > .splash-star:nth-child(18n)::before {
+  animation-delay: 3s;
+}
+
+body .homeMainContainer .container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+body .homeMainContainer .container h2 {
+  margin-top: 0;
+}
+
+.bg-image-right {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  bottom: 40px;
+  width: 45%;
+  height: 100%;
+}
+
+.bg-image-left {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  bottom: 40px;
+  width: 45%;
+  height: 100%;
+}
+
+.text-block {
+  color: #c0c0c0;
+}
+
+.mainContainer .container-parts .wrapper {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-parts {
+  justify-content: stretch;
+  flex-direction: column;
+}
+
+.container-parts h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 1px solid #29c1dd;
+  border-radius: 7px;
+  margin-right: 30px;
+  margin-left: 30px;
+  flex: 1;
+  color: #c0c0c0;
+  overflow: hidden;
+}
+
+.box:first-child {
+  margin-left: 0;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.box .box-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: #29c1dd;
+  padding: 10px;
+}
+
+.box .box-title svg {
+  width: 34px;
+  height: 34px;
+  margin-right: 15px;
+}
+
+.box .box-body {
+  padding: 12px 20px;
+}
+
+.box a {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .container-parts h2 {
+    margin-bottom: 50px;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .boxes .box {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 735px) {
+  .bg-image-left,
+  .bg-image-right {
+    position: initial;
+  }
+
+  .bg-image-right {
+    align-self: flex-end;
+    margin-right: -20px;
+    margin-top: 40px;
+  }
+
+  .mainContainer .wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .splash-rocket {
+    transform: rotate(45deg) translate(20px, -150px);
+  }
+}
+
+@media (max-width: 540px) {
+  .bg-image-left,
+  .bg-image-right {
+    width: 80%;
+  }
 }

@@ -20,3 +20,11 @@ Install dependencies
 ```bash
 yarn install
 ```
+
+Run
+
+```bash
+yarn start
+```
+
+Feel free to fork it, extend and use for your cases.

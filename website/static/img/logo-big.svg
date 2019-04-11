@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="720" viewBox="0 0 720 720">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #f6f6f6;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-Logo_Square);
+      }
+
+      .cls-4 {
+        fill: #faab2d;
+      }
+
+      .cls-5 {
+        fill: #12526f;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-7 {
+        fill: #062431;
+      }
+
+      .cls-8 {
+        fill: #de1726;
+      }
+
+      .cls-9 {
+        fill: #f4f4f4;
+      }
+
+      .cls-10 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-11 {
+        fill: #e8e8e8;
+      }
+
+      .cls-12 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-13, .cls-16 {
+        opacity: 0.996;
+      }
+
+      .cls-13 {
+        clip-path: url(#clip-path-4);
+      }
+
+      .cls-14 {
+        fill: #f23c24;
+      }
+
+      .cls-15 {
+        clip-path: url(#clip-path-5);
+      }
+
+      .cls-16 {
+        clip-path: url(#clip-path-6);
+      }
+
+      .cls-17 {
+        fill: #de1827;
+      }
+
+      .cls-18 {
+        fill: #0b2b39;
+      }
+
+      .cls-19 {
+        fill: #e3b96a;
+      }
+
+      .cls-20 {
+        clip-path: url(#clip-path-7);
+      }
+
+      .cls-21 {
+        fill: #bc9141;
+      }
+
+      .cls-22 {
+        filter: url(#Body);
+      }
+
+      .cls-23 {
+        filter: url(#Pipe);
+      }
+
+      .cls-24 {
+        filter: url(#Side_Wings);
+      }
+
+      .cls-25 {
+        filter: url(#Flame);
+      }
+    </style>
+    <filter id="Flame" x="63.282" y="424.684" width="228.954" height="228.954" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Side_Wings" x="8" y="192.097" width="520.995" height="520.995" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Shadow" class="cls-1" width="209.452" height="290.578" transform="translate(0 0)"/>
+    </clipPath>
+    <filter id="Pipe" x="168.624" y="422.598" width="125.697" height="125.697" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-3"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Body" x="129.346" y="-24.953" width="612.525" height="612.525" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-4"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-2">
+      <rect id="Shadow-2" data-name="Shadow" class="cls-1" width="118.001" height="626.881" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="33.925" height="328.928"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Body-2" data-name="Body" class="cls-2" d="M50.665,579.327h0c-14.992-29.136-26.856-62.508-35.26-99.191A588.572,588.572,0,0,1,4.193,412.558,752.861,752.861,0,0,1,0,331.682a743.3,743.3,0,0,1,5.07-88.531,567.5,567.5,0,0,1,13.367-72.439C28.225,132.472,41.873,98.192,59,68.824A284.822,284.822,0,0,1,80.665,36.731a222.216,222.216,0,0,1,18.9-21.287C110.5,4.683,117.928.046,118,0c.315.2,7.717,4.9,18.438,15.444a222.213,222.213,0,0,1,18.9,21.287A284.827,284.827,0,0,1,177,68.824c17.128,29.368,30.775,63.648,40.563,101.889a567.49,567.49,0,0,1,13.367,72.439A743.3,743.3,0,0,1,236,331.682a752.837,752.837,0,0,1-4.192,80.856A588.618,588.618,0,0,1,220.6,480.107c-8.4,36.679-20.261,70.05-35.248,99.186a195.337,195.337,0,0,0-31.2-6.959,261.437,261.437,0,0,0-72.255.009,195.085,195.085,0,0,0-31.238,6.984Z" transform="translate(0)"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Shadow-3" data-name="Shadow" class="cls-1" width="118.001" height="147.501" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="Body-3" data-name="Body" class="cls-2" d="M50.665,579.327h0c-14.992-29.136-26.856-62.508-35.26-99.191A588.572,588.572,0,0,1,4.193,412.558,752.861,752.861,0,0,1,0,331.682a743.3,743.3,0,0,1,5.07-88.531,567.5,567.5,0,0,1,13.367-72.439C28.225,132.472,41.873,98.192,59,68.824A284.822,284.822,0,0,1,80.665,36.731a222.216,222.216,0,0,1,18.9-21.287C110.5,4.683,117.928.046,118,0c.315.2,7.717,4.9,18.438,15.444a222.213,222.213,0,0,1,18.9,21.287A284.827,284.827,0,0,1,177,68.824c17.128,29.368,30.775,63.648,40.563,101.889a567.49,567.49,0,0,1,13.367,72.439A743.3,743.3,0,0,1,236,331.682a752.837,752.837,0,0,1-4.192,80.856A588.618,588.618,0,0,1,220.6,480.107c-8.4,36.679-20.261,70.05-35.248,99.186a195.337,195.337,0,0,0-31.2-6.959,261.437,261.437,0,0,0-72.255.009,195.085,195.085,0,0,0-31.238,6.984Z" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" width="59.001" height="151.927" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-Logo_Square">
+      <rect width="720" height="720"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_Square" data-name="Logo Square" class="cls-3">
+    <g id="Rocket" transform="translate(-22.46 -49.457)">
+      <g class="cls-25" transform="matrix(1, 0, 0, 1, 22.46, 49.46)">
+        <path id="Flame-2" data-name="Flame" class="cls-4" d="M48.675,175.527S97.351,99.961,97.351,61.951,73.292,0,48.675,0,0,23.94,0,61.951,48.675,175.527,48.675,175.527Z" transform="translate(205.4 436.68) rotate(45)"/>
+      </g>
+      <g id="Side_Wings-2" data-name="Side Wings" transform="translate(253.933 241.038) rotate(45)">
+        <g class="cls-24" transform="matrix(0.71, -0.71, 0.71, 0.71, -299.14, 28.21)">
+          <path id="Side_Wings-3" data-name="Side Wings" class="cls-5" d="M10.9,272.882v0a206.5,206.5,0,1,1,391.21,0,206.612,206.612,0,0,0-391.207,0Z" transform="translate(218.96 204.1) rotate(45)"/>
+        </g>
+        <g id="Mask_Group_3" data-name="Mask Group 3" class="cls-6" transform="translate(203.552 0)">
+          <path id="Side_Wings-4" data-name="Side Wings" class="cls-7" d="M10.9,272.882v0a206.5,206.5,0,1,1,391.21,0,206.612,206.612,0,0,0-391.207,0Z" transform="translate(-203.552 17.7)"/>
+        </g>
+      </g>
+      <g id="Body-4" data-name="Body" transform="translate(586.647 29.31) rotate(45)">
+        <g class="cls-23" transform="matrix(0.71, -0.71, 0.71, 0.71, -384.69, 413.19)">
+          <rect id="Pipe-2" data-name="Pipe" class="cls-8" width="103.251" height="23.6" transform="translate(203.31 434.6) rotate(45)"/>
+        </g>
+        <g class="cls-22" transform="matrix(0.71, -0.71, 0.71, 0.71, -384.69, 413.19)">
+          <path id="Body-5" data-name="Body" class="cls-9" d="M50.665,579.327h0c-14.992-29.136-26.856-62.508-35.26-99.191A588.572,588.572,0,0,1,4.193,412.558,752.861,752.861,0,0,1,0,331.682a743.3,743.3,0,0,1,5.07-88.531,567.5,567.5,0,0,1,13.367-72.439C28.225,132.472,41.873,98.192,59,68.824A284.822,284.822,0,0,1,80.665,36.731a222.216,222.216,0,0,1,18.9-21.287C110.5,4.683,117.928.046,118,0c.315.2,7.717,4.9,18.438,15.444a222.213,222.213,0,0,1,18.9,21.287A284.827,284.827,0,0,1,177,68.824c17.128,29.368,30.775,63.648,40.563,101.889a567.49,567.49,0,0,1,13.367,72.439A743.3,743.3,0,0,1,236,331.682a752.837,752.837,0,0,1-4.192,80.856A588.618,588.618,0,0,1,220.6,480.107c-8.4,36.679-20.261,70.05-35.248,99.186a195.337,195.337,0,0,0-31.2-6.959,261.437,261.437,0,0,0-72.255.009,195.085,195.085,0,0,0-31.238,6.984Z" transform="translate(556.99 -12.95) rotate(45)"/>
+        </g>
+        <g id="Mask_Group_2" data-name="Mask Group 2" class="cls-10" transform="translate(118.002 0)">
+          <path id="Body-6" data-name="Body" class="cls-11" d="M50.665,579.327h0c-14.992-29.136-26.856-62.508-35.26-99.191A588.572,588.572,0,0,1,4.193,412.558,752.861,752.861,0,0,1,0,331.682a743.3,743.3,0,0,1,5.07-88.531,567.5,567.5,0,0,1,13.367-72.439C28.225,132.472,41.873,98.192,59,68.824A284.822,284.822,0,0,1,80.665,36.731a222.216,222.216,0,0,1,18.9-21.287C110.5,4.683,117.928.046,118,0c.315.2,7.717,4.9,18.438,15.444a222.213,222.213,0,0,1,18.9,21.287A284.827,284.827,0,0,1,177,68.824c17.128,29.368,30.775,63.648,40.563,101.889a567.49,567.49,0,0,1,13.367,72.439A743.3,743.3,0,0,1,236,331.682a752.837,752.837,0,0,1-4.192,80.856A588.618,588.618,0,0,1,220.6,480.107c-8.4,36.679-20.261,70.05-35.248,99.186a195.337,195.337,0,0,0-31.2-6.959,261.437,261.437,0,0,0-72.255.009,195.085,195.085,0,0,0-31.238,6.984Z" transform="translate(-118.002 10.175)"/>
+        </g>
+      </g>
+      <g id="Center_Wing" data-name="Center Wing" transform="translate(395.78 353.681) rotate(45)">
+        <path id="Center_Wing-2" data-name="Center Wing" class="cls-5" d="M23.6,0S0,64.532,0,132.751,23.6,272.878,23.6,272.878s23.6-71.907,23.6-140.126S23.6,0,23.6,0Z" transform="translate(0 38.35)"/>
+        <g id="Mask_Group_4" data-name="Mask Group 4" class="cls-12" transform="translate(23.6 0)">
+          <path id="Center_Wing-3" data-name="Center Wing" class="cls-7" d="M23.6,0S0,64.532,0,132.751,23.6,272.878,23.6,272.878s23.6-71.907,23.6-140.126S23.6,0,23.6,0Z" transform="translate(-23.6 38.35)"/>
+        </g>
+      </g>
+      <g id="Nose" transform="translate(579.453 36.505) rotate(45)">
+        <g id="Nose-2" data-name="Nose" class="cls-13" transform="translate(0 0)">
+          <rect id="Nose_Top" data-name="Nose Top" class="cls-14" width="236.002" height="137.176" transform="translate(0.001 -20.5)"/>
+          <path id="Nose_Bottom" data-name="Nose Bottom" class="cls-5" d="M0,0V25.075s57.26-8.85,118-8.85,118,8.85,118,8.85V0Z" transform="translate(0 116.677)"/>
+        </g>
+        <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-15" transform="translate(118.002 0.151)">
+          <g id="Nose-3" data-name="Nose" class="cls-16" transform="translate(-118.002 -0.151)">
+            <rect id="Nose_Top-2" data-name="Nose Top" class="cls-17" width="236.002" height="137.176" transform="translate(0.001 -20.5)"/>
+            <path id="Nose_Bottom-2" data-name="Nose Bottom" class="cls-18" d="M0,0V25.075s57.26-8.85,118-8.85,118,8.85,118,8.85V0Z" transform="translate(0 116.677)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Window" transform="translate(502.165 205.576) rotate(45)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-19" cx="53.101" cy="53.101" r="53.101" transform="translate(0 25.075)"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-5" cx="39.825" cy="39.825" r="39.825" transform="translate(13.275 38.35)"/>
+        <g id="Mask_Group_5" data-name="Mask Group 5" class="cls-20" transform="translate(53.101 0)">
+          <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-21" cx="53.101" cy="53.101" r="53.101" transform="translate(-53.101 25.075)"/>
+          <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-7" cx="39.825" cy="39.825" r="39.825" transform="translate(-39.825 38.35)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

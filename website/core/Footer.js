@@ -37,41 +37,23 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl("doc1.html", this.props.language)}>
-              Getting Started (or other categories)
-            </a>
-            <a href={this.docUrl("doc2.html", this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl("doc3.html", this.props.language)}>
-              API Reference (or other categories)
-            </a>
+            <a href={this.docUrl("getting-started.html", this.props.language)}>Getting Started</a>
+            <a href={this.docUrl("service-introduction.html", this.props.language)}>Create a service</a>
+            <a href={this.docUrl("admin-panel.html", this.props.language)}>Admin panel</a>
+            <a href={this.docUrl("react-kit.html", this.props.language)}>React-kit</a>
           </div>
           <div>
             <h5>Community</h5>
-            <a href={this.pageUrl("users.html", this.props.language)}>
-              User Showcase
-            </a>
-            <a
-              href="http://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <a href={this.pageUrl("users.html", this.props.language)}>Contributors</a>
+            <a href="http://stackoverflow.com/questions/tagged/power-cms" target="_blank" rel="noreferrer noopener">
               Stack Overflow
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Twitter
-            </a>
+            <a href="https://gitter.im/power-cms-dev/community">Project Chat</a>
           </div>
           <div>
             <h5>More</h5>
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a href="https://github.com/power-cms">GitHub</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}

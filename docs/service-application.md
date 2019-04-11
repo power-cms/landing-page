@@ -107,7 +107,7 @@ export interface IActionHandler {
   authorize?: (action: IActionData) => Promise<boolean>;
 }
 
-export declare enum ActionType {
+export enum ActionType {
   CREATE = "create",
   READ = "read",
   UPDATE = "update",
@@ -190,3 +190,64 @@ export class FooService implements IService {
   constructor(public actions: IActionHandler[]) {}
 }
 ```
+
+## Acl
+
+Acl is a part of application security, it's responsible for users authorization to perform any actions. We use builder pattern to compose certain validation rules. It should be heavy used especially in the actions.
+
+Example:
+
+```ts
+public authorize(action: IActionData): Promise<boolean> {
+  return this.acl
+    .createBuilder(action)
+    .isAdmin()
+    .check();
+}
+```
+
+Then building the authorization rules, you should start from the **`createBuilder(action)`** method, then chain all the rules you want to validate, and then build the acl by invoking **`check()`** method.
+
+Available acl methods:
+
+**`.isAdmin()`** - checks if user is admin
+
+**`.isAuthenticated()`** - checks if user is authenticated
+
+**`.isOwner()`** - checks if user is the resource owner (`ownerId` field on the resource should match user's id)
+
+**`.custom(rule: (actionData: any) => boolean)`** - allows to provide custom method
+
+## Remote procedure
+
+Remote procedure module is for communication between services. The application part contains only an interface, without concrete implementation.
+
+This is how it looks like:
+
+```ts
+import { IActionData } from '../action/action-handler';
+export interface IRemoteProcedure {
+    call: <T>(serviceName: string, actionName: string, action: IActionData) => Promise<T>;
+}
+```
+
+## Logger
+
+Everything is obvious here - a standard logger interface.
+
+```ts
+export type ILogMethod = (level: string, msg: string) => void;
+export type ILeveledLogMethod = (msg: string) => void;
+export interface ILogger {
+    log: ILogMethod;
+    error: ILeveledLogMethod;
+    warn: ILeveledLogMethod;
+    info: ILeveledLogMethod;
+    verbose: ILeveledLogMethod;
+    debug: ILeveledLogMethod;
+}
+```
+
+## Pagination
+
+Pagination class is used for data pagination in repository. It allows to set items limit per page, and choose the certain page. 

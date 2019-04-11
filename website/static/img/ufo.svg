@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="420" viewBox="0 0 420 420">
+  <defs>
+    <clipPath id="clip-Ufo">
+      <rect width="420" height="420"/>
+    </clipPath>
+  </defs>
+  <g id="Ufo" clip-path="url(#clip-Ufo)">
+    <circle id="Ellipse_29" data-name="Ellipse 29" cx="121" cy="121" r="121" transform="translate(89 17)" fill="#fffb95"/>
+    <path id="Path_14" data-name="Path 14" d="M3486,907l78,70h240l78-70-78-70H3564Z" transform="translate(-3474 -699)" fill="#12526f"/>
+    <path id="Path_15" data-name="Path 15" d="M3486,907l78,70h240l78-70Z" transform="translate(-3474 -699)" fill="#062431"/>
+    <line id="Line_1" class="ufo-line" data-name="Line 1" x1="44" y2="84" transform="translate(102.5 301.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="15"/>
+    <line id="Line_2" class="ufo-line" data-name="Line 2" x2="36" y2="84" transform="translate(274.5 301.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="15"/>
+    <line id="Line_3" class="ufo-line" data-name="Line 3" y2="84" transform="translate(210.5 301.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="15"/>
+  </g>
+</svg>

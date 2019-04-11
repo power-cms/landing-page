@@ -7,11 +7,13 @@
       "service-application",
       "service-infrastructure"
     ],
-    "Services": ["site-service", "auth-service", "user-service"],
+    "Services": [
+      "site-service",
+      "auth-service",
+      "user-service",
+      "settings-service"
+    ],
     "Admin panel": ["admin-panel"],
     "React kit": ["react-kit"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
   }
 }

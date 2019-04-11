@@ -4,4 +4,4 @@ title: React kit
 sidebar_label: General
 ---
 
-Test content
+Stay tuned - content available soon 🤓

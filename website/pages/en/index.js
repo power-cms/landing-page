@@ -6,69 +6,59 @@
  */
 
 const React = require("react");
+var ReactDOMServer = require("react-dom/server");
 
 const CompLibrary = require("../../core/CompLibrary.js");
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
+const { CameraOff, Lock, Terminal } = require("react-feather");
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
+const { readFileSync } = require("fs");
+const { resolve } = require("path");
+const ufo = readFileSync(resolve(process.cwd(), "static/img/ufo.svg"));
+const rocket = readFileSync(resolve(process.cwd(), "static/img/rocket.svg"));
 
 class HomeSplash extends React.Component {
   render() {
-    const { siteConfig, language = "" } = this.props;
-    const { baseUrl, docsUrl } = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
-    const langPart = `${language ? `${language}/` : ""}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const { siteConfig } = this.props;
+    const { baseUrl } = siteConfig;
 
-    const SplashContainer = props => (
-      <div className="homeContainer">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
-        </div>
-      </div>
-    );
-
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
-
-    const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
-        <small>{siteConfig.tagline}</small>
-      </h2>
-    );
-
-    const PromoSection = props => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
+    const SplashContainer = props => <div className="homeContainer">{props.children}</div>;
 
     const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
+      <a className="button try-it-out" href={props.href} target={props.target}>
+        {props.children}
+      </a>
+    );
+
+    const Svg = props => <img src={`${baseUrl}img/${props.image}.svg`} alt="" className={props.className} />;
+
+    const Galaxy = () => (
+      <div className="galaxy">
+        <div className="stars">
+          {Array.from("x".repeat(40)).map((value, key) => (
+            <div key={key} className="splash-star" />
+          ))}
+        </div>
+        <Svg image="cloud" className="splash-cloud-4" />
+        <Svg image="cloud" className="splash-cloud-1" />
+        <Svg image="cloud" className="splash-cloud-2" />
+        <Svg image="cloud" className="splash-cloud-3" />
+        <Svg image="cloud" className="splash-cloud-5" />
+        <Svg image="cloud" className="splash-cloud-6" />
+        <Svg image="moon" className="splash-moon" />
+        <div className="splash-ufo" dangerouslySetInnerHTML={{ __html: ufo }} />
+        <div className="splash-rocket" dangerouslySetInnerHTML={{ __html: rocket }} />
+        <Svg image="planet-1" className="splash-planet-1" />
+        <Svg image="planet-2" className="splash-planet-2" />
       </div>
     );
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
-        <div className="inner">
-          <ProjectTitle siteConfig={siteConfig} />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl("doc1.html")}>Example Link</Button>
-            <Button href={docUrl("doc2.html")}>Example Link 2</Button>
-          </PromoSection>
-        </div>
+        <Galaxy />
+        <Button href="docs/getting-started">Try it out</Button>
       </SplashContainer>
     );
   }
@@ -77,89 +67,90 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     const { config: siteConfig, language = "" } = this.props;
-    const { baseUrl } = siteConfig;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-    const Block = props => (
-      <Container
-        padding={["bottom", "top"]}
-        id={props.id}
-        background={props.background}
-      >
+    const Svg = props => <img src={`${baseUrl}img/${props.image}.svg`} alt="" className={props.className} />;
+
+    const Parts = () => (
+      <Container padding={["bottom", "top"]} className="container-parts">
+        <h2>Three building blocks</h2>
+        <div className="boxes">
+          <div key="api" className="box">
+            <div className="box-title">
+              <CameraOff /> Headless API
+            </div>
+            <div className="box-body">
+              <p>The core of PowerCMS - standalone, headless API. Scalable, extendable and easy to use.</p>
+              <a href={docUrl("getting-started.html")}>Read more</a>
+            </div>
+          </div>
+          <div key="admin" className="box">
+            <div className="box-title">
+              <Lock /> Admin Panel
+            </div>
+            <div className="box-body">
+              <p>
+                Optional part of PowerCMS - ready to use admin panel, containing all current features. also extendable.
+              </p>
+              <a href={docUrl("admin-panel.html")}>Read more</a>
+            </div>
+          </div>
+          <div key="api" className="box">
+            <div className="box-title">
+              <Terminal /> React kit
+            </div>
+            <div className="box-body">
+              <p>Frontend package, containing all necessary components and containers, to build you frontend app.</p>
+              <a href={docUrl("react-kit.html")}>Read more</a>
+            </div>
+          </div>
+        </div>
+      </Container>
+    );
+
+    const BuiltForDev = () => (
+      <Container padding={["bottom", "top"]}>
+        <Svg image="computer" className="bg-image-right" />
         <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
+          layout="twoColumn"
+          contents={[
+            {
+              title: "Built for Developers",
+              content: ReactDOMServer.renderToString(
+                <div className="text-block">
+                  As every headless CMS - it's dedicated for developers, but works also out of the box. Code quality,
+                  maintainability and latest technologies are always on the first place.
+                </div>
+              )
+            },
+            {}
+          ]}
         />
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{ textAlign: "center" }}
-      >
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content: "Talk about trying this out",
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: "left",
-            title: "Try it Out"
-          }
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              "This is another description of how this project is useful",
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: "right",
-            title: "Description"
-          }
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content: "Talk about learning how to use this",
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: "right",
-            title: "Learn How"
-          }
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: "This is the content of my feature",
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: "top",
-            title: "Feature One"
-          },
-          {
-            content: "The content of my second feature",
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: "top",
-            title: "Feature Two"
-          }
-        ]}
-      </Block>
+    const Microservices = () => (
+      <Container padding={["bottom", "top"]} background="light">
+        <Svg image="microservices" className="bg-image-left" />
+        <GridBlock
+          layout="twoColumn"
+          contents={[
+            {},
+            {
+              title: "Microservices architecture",
+              content: ReactDOMServer.renderToString(
+                <div className="text-block">
+                  Microservices are very popular for their possibilities to scale, independency and flexibility. They
+                  fit very well for the advanced, powerfull system, which is the PowerCMS.
+                </div>
+              )
+            }
+          ]}
+        />
+      </Container>
     );
 
     const Showcase = () => {
@@ -178,28 +169,37 @@ class Index extends React.Component {
       const pageUrl = page => baseUrl + (language ? `${language}/` : "") + page;
 
       return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl("users.html")}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
+        <Container padding={["bottom", "top"]} background="light">
+          <GridBlock
+            layout="oneColumn"
+            contents={[
+              {
+                content: ReactDOMServer.renderToString(
+                  <div className="productShowcaseSection paddingBottom">
+                    <h2>Contributors</h2>
+                    <p>You are very welcome to join our team:</p>
+                    <div className="logos">{showcase}</div>
+                    <div className="more-users">
+                      <a className="button" href="https://gitter.im/power-cms-dev/community" target="_blank">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                )
+              }
+            ]}
+          />
+        </Container>
       );
     };
 
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+        <div className="mainContainer homeMainContainer">
+          <Parts />
+          <Microservices />
+          <BuiltForDev />
           <Showcase />
         </div>
       </div>
