@@ -101,7 +101,8 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  repoUrl: "https://github.com/power-cms/power-cms"
+  repoUrl: "https://github.com/power-cms/power-cms",
+  gaTrackingId: "UA-123143755-3"
 };
 
 module.exports = siteConfig;
